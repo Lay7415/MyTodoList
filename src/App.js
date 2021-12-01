@@ -26,8 +26,6 @@ function App() {
     setUser([...savedData || []])
   }, [save])
   const reListHundler =(newList) => {
-    console.log(user.id)
-    console.log(newList)
     setUser(user.filter(user => user.id !== newList))
     setSave("true")
   }
